@@ -57,7 +57,12 @@ unsigned char encode(CPt2D pt, CPt2D winMin, CPt2D winMax)
 void swapPts(CPt2D *p1, CPt2D *p2)
 {
 	CPt2D tmp;
-	//²¹³äÍêÕû
+	tmp.x = p1->x;
+	tmp.y = p1->y;
+	p1->x = p2->x;
+	p1->y = p2->y;
+	p2->x = tmp.x;
+	p2->y = tmp.y;
 
 
 }
