@@ -9,6 +9,7 @@ public:
 	float x, y;
 };
 #define numVerts 8
+
 CPt2D verts[20] =
 {
 	{100.0, -30.0},
